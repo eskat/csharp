@@ -41,7 +41,7 @@ namespace SdetBootcampDay1.Exercises
                 orderHandler.OrderAndPay(OrderItem.Fortnite, 101);;
             });
 
-            Assert.That(arge.Message, Is.EqualTo($"Insufficient stock for item {OrderItem.Fortnite}"));
+            Assert.That(arge!.Message, Is.EqualTo($"Insufficient stock for item {OrderItem.Fortnite}"));
         }
 
 
@@ -60,7 +60,7 @@ namespace SdetBootcampDay1.Exercises
                 orderHandler.OrderAndPay(OrderItem.DayOfTheTentacle, 1);;
             });
 
-            Assert.That(arge.Message, Is.EqualTo($"Unknown item {OrderItem.DayOfTheTentacle}"));
+            Assert.That(arge!.Message, Is.EqualTo($"Unknown item {OrderItem.DayOfTheTentacle}"));
         }
 
         /**

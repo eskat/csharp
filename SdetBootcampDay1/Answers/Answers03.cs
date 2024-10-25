@@ -25,7 +25,7 @@ namespace SdetBootcampDay1.Answers
                 account.Withdraw(100);
             });
 
-            Assert.That(ae.Message, Is.EqualTo("You cannot overdraw on a savings account"));
+            Assert.That(ae!.Message, Is.EqualTo("You cannot overdraw on a savings account"));
 
             Assert.That(account.Balance, Is.EqualTo(50));
         }
